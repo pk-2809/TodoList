@@ -1,0 +1,14 @@
+.heading {
+    font-family: 'Kalam', cursive;
+    font-size: 24px;
+    padding-top: 8px;
+    margin-left: 8px;
+}
+
+@media (min-width: 768px) {
+    .heading {
+        font-size: 40px;
+        margin-left: 10px;
+    }
+
+}
