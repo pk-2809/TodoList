@@ -7,7 +7,6 @@ export const Tasks = () => {
 
     let [isAddClick, setIsAddClick] = useState(false);
     let [newTask, setNewTask] = useState('');
-
     let [task, setTasks] = useState([]);
 
     function deleteTask(id) {
@@ -55,7 +54,7 @@ export const Tasks = () => {
                     {(task.length > 0 || isAddClick) && <div id="checklist" className='m-5 flex flex-col overflow-y-auto'>
 
                         <div className='list-container mb-2 flex items-center'>
-                            {isAddClick && <input type="text" name="text" className="input flex-1" placeholder="Add Your New Task Here..." value={newTask} onChange={onInputChange} onBlur={onAddTask} onKeyDown={handleKeyDown} />}
+                            {isAddClick && <input type="text" autoFocus name="text" className="input flex-1" placeholder="Add Your New Task Here..." value={newTask} onChange={onInputChange} onBlur={onAddTask} onKeyDown={handleKeyDown} />}
                         </div>
                         {task.map((t) => (
                             <div className='list-container mb-1 flex items-center' key={t.id} onClick={() => onMarkComplete(t.id)}>
