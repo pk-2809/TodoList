@@ -47,7 +47,7 @@ export const Tasks = () => {
     return (
         <>
             <div className="bg-3 h-full flex justify-center items-center">
-                <div className="bg-2 w-full h-3/5 flex flex-col max-w-64 sm:max-w-md md:max-w-2xl rounded-lg">
+                <div className="bg-2 w-full h-3/5 flex flex-col max-w-80 sm:max-w-md md:max-w-2xl rounded-lg">
                     <div className='flex p-4 justify-between items-center rounded-t-lg bg-white'>
                         <p className="text-xl sm:text-3xl md:text-4xl list-head color-1">My List</p>
                         <button className="btn" onClick={onAddClick}>Add Task</button>
